@@ -1,8 +1,9 @@
 package labs.lab10_adapter_template.original.android;
 
+import labs.lab10_adapter_template.original.graphics.Image2D;
+
 import java.awt.Point;
 
-import graphics.Image2D;
 
 public class AndroidAPI {
 	

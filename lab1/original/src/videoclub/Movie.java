@@ -1,4 +1,4 @@
-package labs.lab1.original.videoclub.src;
+package videoclub;
 
 public class Movie {
 

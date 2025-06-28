@@ -1,11 +1,11 @@
-package labs.lab1.original.videoclub.test;
+package videoclub;
 
-import static org.junit.jupiter.api.Assertions.*;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
+import static org.junit.Assert.*;
 import static videoclub.Movie.PriceCode.*;
 
-class CustomerTest {
+public class CustomerTest {
 	
 	@Test
 	public void testCustomer() {

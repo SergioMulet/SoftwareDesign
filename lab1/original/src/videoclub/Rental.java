@@ -1,4 +1,6 @@
-package labs.lab1.original.videoclub.src;
+package videoclub;
+
+import labs.lab1.original.videoclub.Movie;
 
 // Represents a rental of a movie by a customer.
 public class Rental  {

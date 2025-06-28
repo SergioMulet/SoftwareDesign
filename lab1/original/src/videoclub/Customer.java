@@ -1,9 +1,9 @@
-package labs.lab1.original.videoclub.src;
+package videoclub;
 
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
 
-import static videoclub.Movie.PriceCode.*;
+
 
 public class Customer {
 
