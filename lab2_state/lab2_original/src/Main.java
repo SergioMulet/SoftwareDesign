@@ -1,7 +1,8 @@
-package labs.lab2_state.original;
-
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
 public class Main {
 	
@@ -16,7 +17,7 @@ public class Main {
 	private static Scanner console = new Scanner(System.in);
 
 	public static void main(String[] args) throws Exception {
-		BufferedReader file = new BufferedReader(new FileReader("factorial.txt"));
+		BufferedReader file = new BufferedReader(new FileReader("../factorial.txt"));
 
 		String line;
 		while ((line = file.readLine()) != null)

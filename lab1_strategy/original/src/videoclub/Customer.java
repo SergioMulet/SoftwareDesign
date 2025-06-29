@@ -3,6 +3,7 @@ package videoclub;
 import java.util.ArrayList;
 import java.util.List;
 
+import static videoclub.Movie.PriceCode.*;
 
 
 public class Customer {
