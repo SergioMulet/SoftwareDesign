@@ -1,11 +1,22 @@
-package labs.lab3.original.editor.core;
+package core;
+
+import tools.SelectionTool;
+
+import java.util.HashMap;
 
 public class Editor {
 
 	private Drawing drawing;
+	private Tool currentTool;
+	private HashMap<String, Tool> tools = new HashMap<>();
 	
 	public Editor() {
 		this(new Drawing());
+		setDefaultTool();
+	}
+
+	private void setDefaultTool() {
+		currentTool = new SelectionTool();
 	}
 	
 	public Editor(Drawing drawing) {
@@ -31,18 +42,18 @@ public class Editor {
     //$ UI methods ----------------------------------------
 
 	public void toolButtonPressed(String toolName) {
-		// ...
+		currentTool = tools.get(toolName);
 	}
 
 	public void mousePressed(int x, int y) {
-		// ...
+		currentTool.mousePressed(x, y);
 	}
 
 	public void mouseMoved(int x, int y) {
-		// ...
+		currentTool.mouseMoved(x, y);
 	}
 
 	public void mouseReleased(int x, int y) {
-		// ...
+		currentTool.mouseReleased(x, y);
 	}
 }

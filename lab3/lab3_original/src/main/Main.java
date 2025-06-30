@@ -1,8 +1,8 @@
-package labs.lab3.original.main;
+package main;
 
 import java.io.*;
 
-import editor.core.Editor;
+import core.Editor;
 
 public class Main {
 

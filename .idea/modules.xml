@@ -7,6 +7,9 @@
       <module fileurl="file://$PROJECT_DIR$/lab2_state/lab2_original/lab2_original.iml" filepath="$PROJECT_DIR$/lab2_state/lab2_original/lab2_original.iml" />
       <module fileurl="file://$PROJECT_DIR$/lab2_state/lab2_solution/lab2_solution.iml" filepath="$PROJECT_DIR$/lab2_state/lab2_solution/lab2_solution.iml" />
       <module fileurl="file://$PROJECT_DIR$/lab2_state/lab2_state.iml" filepath="$PROJECT_DIR$/lab2_state/lab2_state.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab3/lab3.iml" filepath="$PROJECT_DIR$/lab3/lab3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab3/lab3_original/lab3_original.iml" filepath="$PROJECT_DIR$/lab3/lab3_original/lab3_original.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab3/lab3_solution/lab3_solution.iml" filepath="$PROJECT_DIR$/lab3/lab3_solution/lab3_solution.iml" />
       <module fileurl="file://$PROJECT_DIR$/lab1_strategy/original/original.iml" filepath="$PROJECT_DIR$/lab1_strategy/original/original.iml" />
       <module fileurl="file://$PROJECT_DIR$/lab1_strategy/solution/solution.iml" filepath="$PROJECT_DIR$/lab1_strategy/solution/solution.iml" />
     </modules>

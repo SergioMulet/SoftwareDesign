@@ -1,4 +1,4 @@
-package labs.lab3.original.editor.core;
+package core;
 
 public class Drawing  {
 	
