@@ -10,9 +10,15 @@
       <module fileurl="file://$PROJECT_DIR$/lab3_factory_method/lab3_factory_method.iml" filepath="$PROJECT_DIR$/lab3_factory_method/lab3_factory_method.iml" />
       <module fileurl="file://$PROJECT_DIR$/lab3_factory_method/lab3_original/lab3_original.iml" filepath="$PROJECT_DIR$/lab3_factory_method/lab3_original/lab3_original.iml" />
       <module fileurl="file://$PROJECT_DIR$/lab3_factory_method/lab3_solution/lab3_solution.iml" filepath="$PROJECT_DIR$/lab3_factory_method/lab3_solution/lab3_solution.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lab4_strategy/lab4_original/lab4_original.iml" filepath="$PROJECT_DIR$/lab4_strategy/lab4_original/lab4_original.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lab4_strategy/lab4_solution/lab4_solution.iml" filepath="$PROJECT_DIR$/lab4_strategy/lab4_solution/lab4_solution.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lab4_strategy/lab4_strategy.iml" filepath="$PROJECT_DIR$/lab4_strategy/lab4_strategy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab4_strategy_composite/lab4_original/lab4_original.iml" filepath="$PROJECT_DIR$/lab4_strategy_composite/lab4_original/lab4_original.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab4_strategy_composite/lab4_solution/lab4_solution.iml" filepath="$PROJECT_DIR$/lab4_strategy_composite/lab4_solution/lab4_solution.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab4_strategy_composite/lab4_strategy_composite.iml" filepath="$PROJECT_DIR$/lab4_strategy_composite/lab4_strategy_composite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab5_command/lab5_command.iml" filepath="$PROJECT_DIR$/lab5_command/lab5_command.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab5_command/lab5_original/lab5_original.iml" filepath="$PROJECT_DIR$/lab5_command/lab5_original/lab5_original.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab5_command/lab5_solution/lab5_solution.iml" filepath="$PROJECT_DIR$/lab5_command/lab5_solution/lab5_solution.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab6_adapter/lab6_adapter.iml" filepath="$PROJECT_DIR$/lab6_adapter/lab6_adapter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab6_adapter/lab6_original/lab6_original.iml" filepath="$PROJECT_DIR$/lab6_adapter/lab6_original/lab6_original.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab6_adapter/lab6_solution/lab6_solution.iml" filepath="$PROJECT_DIR$/lab6_adapter/lab6_solution/lab6_solution.iml" />
       <module fileurl="file://$PROJECT_DIR$/lab1_strategy/original/original.iml" filepath="$PROJECT_DIR$/lab1_strategy/original/original.iml" />
       <module fileurl="file://$PROJECT_DIR$/lab1_strategy/solution/solution.iml" filepath="$PROJECT_DIR$/lab1_strategy/solution/solution.iml" />
     </modules>

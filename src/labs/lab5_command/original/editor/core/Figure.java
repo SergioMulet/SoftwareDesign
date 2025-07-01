@@ -1,9 +1,0 @@
-package labs.lab5_command.original.editor.core;
-
-import java.io.PrintWriter;
-
-public interface Figure {
-    void draw(PrintWriter output);
-    boolean contains(int x, int y);
-    void moveBy(int dx, int dy);
-}
