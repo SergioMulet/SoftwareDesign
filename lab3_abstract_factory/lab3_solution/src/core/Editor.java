@@ -1,6 +1,9 @@
 package core;
 
+import tools.CircleTool;
+import tools.RectangleTool;
 import tools.SelectionTool;
+import tools.TriangleTool;
 
 import java.util.HashMap;
 
@@ -21,6 +24,10 @@ public class Editor {
 	
 	public Editor(Drawing drawing) {
 		setDrawing(drawing);
+		tools.put("selection", new SelectionTool());
+		tools.put("rectangle", new RectangleTool(this));
+		tools.put("circle", new CircleTool(this));
+		tools.put("triangle", new TriangleTool(this));
 	}
 
 	public void draw() {
@@ -37,6 +44,10 @@ public class Editor {
 		
 	public void setDrawing(Drawing drawing) {
 		this.drawing = drawing;
+	}
+
+	public void addFigure(Figure figure) {
+		this.drawing.addFigure(figure);
 	}
 		
     //$ UI methods ----------------------------------------
