@@ -1,14 +1,20 @@
-package labs.lab4_startegy.original.forms;
+package forms;
 
-import java.io.*;
 
-public class NumericField implements Field {
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class PredefinedField implements Field {
 
 	private String label;
+	private String[] predefinedValues;
 	private String value;
 
-	public NumericField(String label) {
+	public PredefinedField(String label, String... prefefinedValues) {
 		this.label = label;
+		this.predefinedValues = prefefinedValues;
 	}
 
 	public void askUser() {
@@ -16,14 +22,14 @@ public class NumericField implements Field {
 
 		boolean isValid;
 		do {
-			isValid = true;
+			isValid = false;
 			try {
 				System.out.print(label + ": ");
 				value = console.readLine();
 
-				for (char ch : value.toCharArray()) {
-					if (!Character.isDigit(ch)) {
-						isValid = false;
+				for (String each : predefinedValues) {
+					if (value.equalsIgnoreCase(each)) {
+						isValid = true;
 						break;
 					}
 				}

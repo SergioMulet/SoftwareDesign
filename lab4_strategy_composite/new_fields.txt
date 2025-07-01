@@ -1,0 +1,11 @@
+"Código de producto". Length = 4
+
+"Código postal". Digits and length = 5
+
+"Edad". Digits and greater than 18
+
+"Sueldo". Digits and greater than 800 and less than 1200
+
+"Ubicación". Santander... Cádiz or postal code
+
+"Código de Promoción". Text or 3-digit number

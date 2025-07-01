@@ -1,6 +1,9 @@
-package labs.lab4_startegy.original.main;
+package main;
 
-import forms.*;
+import forms.Form;
+import forms.NumericField;
+import forms.PredefinedField;
+import forms.TextField;
 
 public class Main {
 

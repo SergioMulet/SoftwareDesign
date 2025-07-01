@@ -1,4 +1,4 @@
-package labs.lab4_startegy.original.forms;
+package forms;
 
 public interface Field {
 	void askUser();

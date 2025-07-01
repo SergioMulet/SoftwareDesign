@@ -1,16 +1,16 @@
-package labs.lab4_startegy.original.forms;
+package forms;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
-public class PredefinedField implements Field {
+public class TextField implements Field {
 
 	private String label;
-	private String[] predefinedValues;
 	private String value;
 
-	public PredefinedField(String label, String... prefefinedValues) {
+	public TextField(String label) {
 		this.label = label;
-		this.predefinedValues = prefefinedValues;
 	}
 
 	public void askUser() {
@@ -18,14 +18,14 @@ public class PredefinedField implements Field {
 
 		boolean isValid;
 		do {
-			isValid = false;
+			isValid = true;
 			try {
 				System.out.print(label + ": ");
 				value = console.readLine();
 
-				for (String each : predefinedValues) {
-					if (value.equalsIgnoreCase(each)) {
-						isValid = true;
+				for (char ch : value.toCharArray()) {
+					if (!Character.isLetter(ch)) {
+						isValid = false;
 						break;
 					}
 				}

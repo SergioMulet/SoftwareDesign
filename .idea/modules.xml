@@ -7,9 +7,12 @@
       <module fileurl="file://$PROJECT_DIR$/lab2_state/lab2_original/lab2_original.iml" filepath="$PROJECT_DIR$/lab2_state/lab2_original/lab2_original.iml" />
       <module fileurl="file://$PROJECT_DIR$/lab2_state/lab2_solution/lab2_solution.iml" filepath="$PROJECT_DIR$/lab2_state/lab2_solution/lab2_solution.iml" />
       <module fileurl="file://$PROJECT_DIR$/lab2_state/lab2_state.iml" filepath="$PROJECT_DIR$/lab2_state/lab2_state.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lab3_abstract_factory/lab3_abstract_factory.iml" filepath="$PROJECT_DIR$/lab3_abstract_factory/lab3_abstract_factory.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lab3_abstract_factory/lab3_original/lab3_original.iml" filepath="$PROJECT_DIR$/lab3_abstract_factory/lab3_original/lab3_original.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lab3_abstract_factory/lab3_solution/lab3_solution.iml" filepath="$PROJECT_DIR$/lab3_abstract_factory/lab3_solution/lab3_solution.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab3_factory_method/lab3_factory_method.iml" filepath="$PROJECT_DIR$/lab3_factory_method/lab3_factory_method.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab3_factory_method/lab3_original/lab3_original.iml" filepath="$PROJECT_DIR$/lab3_factory_method/lab3_original/lab3_original.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab3_factory_method/lab3_solution/lab3_solution.iml" filepath="$PROJECT_DIR$/lab3_factory_method/lab3_solution/lab3_solution.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab4_strategy/lab4_original/lab4_original.iml" filepath="$PROJECT_DIR$/lab4_strategy/lab4_original/lab4_original.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab4_strategy/lab4_solution/lab4_solution.iml" filepath="$PROJECT_DIR$/lab4_strategy/lab4_solution/lab4_solution.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab4_strategy/lab4_strategy.iml" filepath="$PROJECT_DIR$/lab4_strategy/lab4_strategy.iml" />
       <module fileurl="file://$PROJECT_DIR$/lab1_strategy/original/original.iml" filepath="$PROJECT_DIR$/lab1_strategy/original/original.iml" />
       <module fileurl="file://$PROJECT_DIR$/lab1_strategy/solution/solution.iml" filepath="$PROJECT_DIR$/lab1_strategy/solution/solution.iml" />
     </modules>

@@ -1,6 +1,7 @@
-package labs.lab4_startegy.original.forms;
+package forms;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Form {
 	

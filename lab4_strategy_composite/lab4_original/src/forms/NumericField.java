@@ -1,13 +1,15 @@
-package labs.lab4_startegy.original.forms;
+package forms;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
-public class TextField implements Field {
+public class NumericField implements Field {
 
 	private String label;
 	private String value;
 
-	public TextField(String label) {
+	public NumericField(String label) {
 		this.label = label;
 	}
 
@@ -22,7 +24,7 @@ public class TextField implements Field {
 				value = console.readLine();
 
 				for (char ch : value.toCharArray()) {
-					if (!Character.isLetter(ch)) {
+					if (!Character.isDigit(ch)) {
 						isValid = false;
 						break;
 					}
