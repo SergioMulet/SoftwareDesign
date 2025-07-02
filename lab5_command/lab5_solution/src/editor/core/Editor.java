@@ -22,6 +22,8 @@ public class Editor {
 	private Map<String, Tool> toolbar = new LinkedHashMap<>();
 	// The names of the tools to be shown in the status bar
 	private Map<Tool, String> toolNames = new LinkedHashMap<>();
+
+	private History history = new History();
 	
 	public Editor() {
 		this(new Drawing());
@@ -48,7 +50,7 @@ public class Editor {
 	// also call 'addTool' to add the created tool with a name to the toolbar.
 	//
 	protected Tool createDefaultTool() {
-		Tool tool = new SelectionTool(drawing);
+		Tool tool = new SelectionTool(this);
 		addTool("selection", tool);
 		return tool;
 	}
@@ -121,11 +123,23 @@ public class Editor {
 		currentTool.releasedOn(x, y);
 	}
 
-	public void undo(){
+	public History getHistory() {
+		return history;
+	}
 
+	public boolean canUndo(){
+		return history.canUndo();
+	}
+
+	public boolean canRedo(){
+		return history.canRedo();
+	}
+
+	public void undo(){
+		history.undo();
 	}
 
 	public void redo(){
-
+		history.redo();
 	}
 }

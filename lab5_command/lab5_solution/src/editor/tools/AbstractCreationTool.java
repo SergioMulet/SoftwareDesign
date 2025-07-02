@@ -1,9 +1,7 @@
 package editor.tools;
 
-import editor.core.Area;
-import editor.core.Editor;
-import editor.core.Figure;
-import editor.core.Tool;
+import editor.actions.CreateAction;
+import editor.core.*;
 
 public abstract class AbstractCreationTool implements Tool {
 
@@ -44,7 +42,8 @@ public abstract class AbstractCreationTool implements Tool {
         }
         bounds.resizeTo(x, y);
         Figure newFigure = createFigure(bounds);
-        editor.drawing().addFigure(newFigure);
+        Action createAction = new CreateAction(newFigure, editor.drawing());
+        editor.getHistory().execute(createAction);
         editor.toolDone();
     }
 

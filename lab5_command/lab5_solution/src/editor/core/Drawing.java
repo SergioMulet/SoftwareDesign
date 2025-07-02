@@ -13,6 +13,10 @@ public class Drawing  {
 		figures.add(figure);
 	}
 
+	public void removeFigure(Figure figure) {
+		figures.remove(figure);
+	}
+
 	public List<Figure> figures() {
 		return Collections.unmodifiableList(figures);
 	}

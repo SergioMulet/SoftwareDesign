@@ -76,6 +76,20 @@ public class Main {
 				editor.draw();
 			} else if (action.equals("help")) {
 				showHelp(output);
+			} else if (action.equals("undo")){
+				if(editor.canUndo()){
+					editor.undo();
+				}
+				else{
+					System.out.println("Nothing to undo");
+				}
+			} else if (action.equals("redo")){
+				if(editor.canRedo()){
+					editor.redo();
+				}
+				else{
+					System.out.println("Nothing to redo");
+				}
 			} else {
 				output.println("Unknown action");
 				showHelp(output);

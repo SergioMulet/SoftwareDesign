@@ -1,18 +1,15 @@
 package editor.tools;
 
-import editor.core.Drawing;
-import editor.core.Figure;
-import editor.core.Point;
-import editor.core.Tool;
+import editor.core.*;
 
 public class SelectionTool implements Tool {
 
-    private Drawing drawing;
+    private Editor editor;
     private Figure figure;
     private Point lastPosition;
 
-    public SelectionTool(Drawing drawing) {
-        this.drawing = drawing;
+    public SelectionTool(Editor editor) {
+        this.editor = editor;
     }
 
     @Override
@@ -23,7 +20,7 @@ public class SelectionTool implements Tool {
 
     @Override
     public void clickedOn(int x, int y) {
-        figure = drawing.findFigureAt(x, y);
+        figure = editor.drawing().findFigureAt(x, y);
         if (figure != null)
             lastPosition = new Point(x, y);
     }
