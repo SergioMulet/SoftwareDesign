@@ -5,7 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/SoftwareDesign.iml" filepath="$PROJECT_DIR$/SoftwareDesign.iml" />
       <module fileurl="file://$PROJECT_DIR$/lab10_exam/lab10_exam.iml" filepath="$PROJECT_DIR$/lab10_exam/lab10_exam.iml" />
       <module fileurl="file://$PROJECT_DIR$/lab10_exam/lab10_original/lab10_original.iml" filepath="$PROJECT_DIR$/lab10_exam/lab10_original/lab10_original.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lab10_exam/lab10_solution/lab10_solution.iml" filepath="$PROJECT_DIR$/lab10_exam/lab10_solution/lab10_solution.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab10_exam/lab10_solution2_adapter/lab10_solution2_adapter.iml" filepath="$PROJECT_DIR$/lab10_exam/lab10_solution2_adapter/lab10_solution2_adapter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab10_exam/lab10_solution_template/lab10_solution_template.iml" filepath="$PROJECT_DIR$/lab10_exam/lab10_solution_template/lab10_solution_template.iml" />
       <module fileurl="file://$PROJECT_DIR$/lab1_strategy/lab1_strategy.iml" filepath="$PROJECT_DIR$/lab1_strategy/lab1_strategy.iml" />
       <module fileurl="file://$PROJECT_DIR$/lab2_state/lab2_original/lab2_original.iml" filepath="$PROJECT_DIR$/lab2_state/lab2_original/lab2_original.iml" />
       <module fileurl="file://$PROJECT_DIR$/lab2_state/lab2_solution/lab2_solution.iml" filepath="$PROJECT_DIR$/lab2_state/lab2_solution/lab2_solution.iml" />

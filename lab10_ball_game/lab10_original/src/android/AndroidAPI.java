@@ -1,6 +1,7 @@
 package android;
 
-import labs.lab10_adapter_template.original.graphics.Image2D;
+
+import graphics.Image2D;
 
 import java.awt.*;
 
