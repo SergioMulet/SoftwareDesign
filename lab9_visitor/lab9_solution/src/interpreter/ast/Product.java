@@ -1,5 +1,7 @@
 package interpreter.ast;
 
+import interpreter.Visitor;
+
 public class Product implements Expression {
 	
 	public Expression left, right;
@@ -7,5 +9,10 @@ public class Product implements Expression {
 	public Product(Expression left, Expression right) {
 		this.left = left;
 		this.right = right;
+	}
+
+	@Override
+	public Object accept(Visitor visitor, Object param) {
+		return visitor.visit(this, param);
 	}
 }
