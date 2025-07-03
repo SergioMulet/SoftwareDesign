@@ -1,5 +1,9 @@
 package main;
 
+import actions.ChooseEventAction;
+import actions.NumberOfTicketsAction;
+import actions.SelectPaymentAction;
+import machine.Executor;
 import machine.Machine;
 import machine.Payment;
 import machine.model.Event;
@@ -10,6 +14,7 @@ import java.util.List;
 public class UI {
 
     private Machine machine;
+    private Executor executor;
 
     public UI(Machine machine){
         this.machine = machine;
@@ -19,16 +24,16 @@ public class UI {
         machine.loadPayments();
         while (true)
         {
-            Event selectedEvent = machine.selectEvent();
+            Event selectedEvent = executor.execute(new ChooseEventAction(machine));
 
             machine.getDisplay().show("\n¿Cuántas entradas desea comprar? ");
-            int numberOfTickets = machine.howManyTickets(selectedEvent.getAvailableTickets());
+            int numberOfTickets = executor.execute(new NumberOfTicketsAction(machine, selectedEvent.getAvailableTickets()));
 
             // se calcula el importe a pagar
             double amountToPay = numberOfTickets * selectedEvent.getPrice();
             machine.getDisplay().show(String.format("Importe a pagar: %.2f €%n", amountToPay));
 
-            Payment paymentMode = machine.selectPaymentMode();
+            Payment paymentMode = executor.execute(new SelectPaymentAction(machine));
 
             // se realiza el pago
             boolean isValidPayment = paymentMode.pay(machine, amountToPay);

@@ -13,12 +13,6 @@ public class SelectPaymentAction implements Action<Payment>{
 
     @Override
     public Payment execute() {
-        machine.showPaymentModes();
-        int option = machine.getKeyboard().readOption(2);
-        Payment payment = machine.getPayments().get(String.valueOf(option));
-        if(payment == null){
-            throw new AssertionError("Método de pago inválido");
-        }
-        return payment;
+        return machine.selectPaymentMode();
     }
 }

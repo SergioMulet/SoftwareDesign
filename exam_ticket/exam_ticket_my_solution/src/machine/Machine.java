@@ -66,7 +66,13 @@ public class Machine
 
 	public Payment selectPaymentMode()
 	{
-		return executor.execute(new SelectPaymentAction(this));
+		showPaymentModes();
+		int option = keyboard.readOption(2);
+		Payment payment = payments.get(String.valueOf(option));
+		if(payment == null){
+			throw new AssertionError("Método de pago inválido");
+		}
+		return payment;
 	}
 
 	//-- Seleccionar evento
@@ -74,7 +80,11 @@ public class Machine
 	
 	public Event selectEvent()
 	{
-		return executor.execute(new ChooseEventAction(this));
+		showEvents();
+		int option = keyboard.readOption(events.size());
+		Event event = events.get(option - 1);
+		showEvent(event);
+		return event;
 	}
 	
 	public void showEvents()
@@ -101,7 +111,13 @@ public class Machine
 	
 	public int howManyTickets(int availableTickets)
 	{
-		return executor.execute(new NumberOfTicketsAction(this, availableTickets));
+		do {
+			int numberOfTickets = keyboard.readInt();
+			if (numberOfTickets <= availableTickets)
+				return numberOfTickets;
+			display.show(String.format("Sólo quedan %d entradas disponibles, seleccione un número menor: ",
+					availableTickets));
+		} while (true);
 	}
 
 

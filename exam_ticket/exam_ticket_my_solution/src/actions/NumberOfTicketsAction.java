@@ -14,12 +14,6 @@ public class NumberOfTicketsAction implements Action<Integer>{
 
     @Override
     public Integer execute() {
-        do {
-            int numberOfTickets = machine.getKeyboard().readInt();
-            if (numberOfTickets <= availableTickets)
-                return numberOfTickets;
-            machine.getDisplay().show(String.format("Sólo quedan %d entradas disponibles, seleccione un número menor: ",
-                    availableTickets));
-        } while (true);
+        return machine.howManyTickets(availableTickets);
     }
 }
